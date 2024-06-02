@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Tick-Tock Joy | Timer App</title>
+  </head>
+  <body>
+    <main class="container">
+      <h1 class="title">Tick-Tock Joy</h1>
+      <div class="timer">
+        <input
+          class="timer__input"
+          type="number"
+          id="hours"
+          placeholder="Hours"
+        />
+        <input
+          class="timer__input"
+          type="number"
+          id="minutes"
+          placeholder="Minutes"
+        />
+        <input
+          class="timer__input"
+          type="number"
+          id="seconds"
+          placeholder="Seconds"
+        />
+      </div>
+      <div class="timer__time" id="time">00:00:00</div>
+      <div class="timer__buttons">
+        <button id="startBtn">Start</button>
+        <button id="pauseBtn">Pause</button>
+        <button id="resetBtn">Reset</button>
+      </div>
+    </main>
+    <script src="./scripts/scripts.js"></script>
+  </body>
+</html>

@@ -1,0 +1,99 @@
+@use "./partials/mixins" as *;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f0e3fd;
+  padding: 1rem;
+}
+
+.container {
+  position: relative;
+  max-width: 600px;
+  width: 100%;
+  border-radius: 8px;
+  padding: 25px 10px;
+  margin: 85px auto 0;
+  background-color: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 1.5rem;
+
+  @include tablet {
+    font-size: 36px;
+  }
+}
+
+.timer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+
+  &__input {
+    width: 6rem;
+    height: 30px;
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding: 18px 16px;
+
+    @include tablet {
+      width: 11rem;
+      max-width: 180px;
+      font-size: 16px;
+
+      padding: 18px;
+    }
+  }
+
+  &__input:focus {
+    border-color: #c140f4;
+  }
+
+  &__input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+
+  &__time {
+    padding: 24px;
+    text-align: center;
+    font-size: 24px;
+  }
+
+  &__buttons {
+    text-align: center;
+  }
+}
+
+button {
+  padding: 6px 12px;
+  outline: none;
+  border: none;
+  background-color: #c140f4;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+
+  @include tablet {
+    padding: 8px 12px;
+    font-size: 16px;
+  }
+}
+
+button:hover {
+  background-color: #a742cc;
+}
